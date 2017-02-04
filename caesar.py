@@ -17,6 +17,10 @@ def caesar():
 			b = ord(i) + int(key)
 			c = chr(b)
 			finish.append(c)
-	print(finish)
+	import os
+	file = open("Cipher.txt", "w")
+	for i in finish:
+		file.write(i)
+	file.close()
 
 caesar()
